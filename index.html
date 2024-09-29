@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="faviconT.png">
+    <title>Ranil Portfolio</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav id="navbar">
+      <h1>Ranil Kalyan</h1>
+      <div class="nav-links">
+       <!-- <button id="mode"><i class="fa-regular fa-moon"></i></button> -->
+        <a href="#About">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Skills">Skills</a>
+        <a
+          href="https://drive.google.com/file/d/1P_hg0rA3qAsP-2O02G_GW4BNQfWUB4x9/view"
+          target="_blank"
+          >Resume</a
+        >
+        <a href="mailto:ranilkalyan@gmail.com">Contact</a>
+      </div>
+      <!-- bar icon -->
+      <div class="navbar-toggle" onclick="showNavbar()">
+       <!-- <button id="side-nav-mode" ><i class="fa-regular fa-moon"></i></button> -->
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <!-- side nav bar -->
+    <div id="side-navbar">
+      <p style="text-align: right" onclick="hideNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+      <div class="side-nav-links">
+        <p class="side-nav-link" onclick="hidesideNav()"><a href="#About">About</a></p>
+        <p class="side-nav-link" onclick="hidesideNav()"><a href="#Skills">Skills</a></p>
+        <p class="side-nav-link" onclick="hidesideNav()"><a href="#Projects">Projects</a></p>
+        <p class="side-nav-link" onclick="hidesideNav()">
+          <a
+            href="https://drive.google.com/file/d/1P_hg0rA3qAsP-2O02G_GW4BNQfWUB4x9/view" target="_blank"
+            >Resume</a
+          >
+        </p>
+        <p class="side-nav-link" onclick="hidesideNav()">
+          <a href="mailto:ranilkalyan@gmail.com">Contact</a>
+        </p>
+      </div>
+    </div>
+    <!-- header -->
+    <div onclick="hidesideNav()">
+    <header id="header">
+      <div class="image-for-mob">
+        <img src="Thoufic(placement photo).JPG" alt="Owner" />
+      </div>
+      <div class="about-me">
+        <h1>👋 I'm Ranil</h1>
+        <p>
+            As an aspiring software engineer, I'm excited to transform my passion for technology into meaningful solutions.
+            Although I'm just starting out in the field, I've built a solid foundation in HTML, CSS, and JavaScript.
+            I am eager to explore the broader landscape of software engineering.
+        </p>
+      </div>
+      <!-- image -->
+      <div class="image">
+        <img src="Ranil Photo.jpg" alt="" />
+      </div>
+    </header>
+    <section>
+      <div class="socialmedia">
+        <a href="https://github.com/Ranil100" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/ranil-ece53/" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section>
+      <div id="Projects">
+        <h1 id="projects-heading">PROJECTS</h1>
+        <div id="project-container">
+          <div class="projects">
+            <h3>Contact Management System Using C++</h3>
+            <p>
+                I developed a Contact Management System in C++ that allows users to store, update, search, and manage contact information. 
+                The system includes features for adding, editing, and deleting contacts, with file handling for persistent data storage. 
+                It offers a simple, user-friendly interface and clear prompts for interaction. 
+                
+            </p><br/>
+            <div class="code-site">
+              <a
+                class="code"
+                href="https://github.com/Ranil100/Contact-Mnanagement"
+                target="_blank"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
+          </div>
+          <div class="projects">
+            <h3>Tic-Tac-Toe</h3>
+            <p>
+                I developed a Tic Tac Toe game using HTML, CSS, and JavaScript, featuring a clean interface and responsive design. 
+                The game allows two players to compete, with logic that checks for win conditions and handles ties. 
+                This project demonstrates my skills in DOM manipulation, event handling, and building interactive web applications.
+            </p>
+            <br />
+            <div class="code-site">
+              <a
+                class="code"
+                href="https://github.com/Ranil100/Tic-Tac-Toe"
+                target="_blank"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+              <a
+                class="link-icon"
+                href="https://vercel.com/ranils-projects/tic-tac-toe"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="projects">
+            <h3>To-Do-List</h3>
+            <p>
+              Developed a responsive To-Do-List with HTML, CSS, and
+              JavaScript, ensuring smooth experience across devices and optimized
+              for both desktop and mobile platforms.
+            </p>
+            <br />
+            <div class="code-site">
+              <a
+                class="code"
+                href="https://github.com/Ranil100/To-Do-List"
+                target="_blank"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+              <a
+                class="link-icon"
+                href="https://vercel.com/ranils-projects/to-do-list"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="projects">
+            <h3>Quiz App</h3>
+            <p>
+              Developed a responsive Quiz App app with local storage using
+              HTML, CSS, and JavaScript, prioritizing intuitive UI design for
+              efficient task management across devices.
+            </p>
+            <br />
+            <div class="code-site">
+              <a
+              class="code"
+              href="https://github.com/Ranil100/Quiz-App"
+              target="_blank"
+              ><i class="fa-solid fa-code"></i
+            ></a>
+            <a
+              class="link-icon"
+              href="https://vercel.com/ranils-projects/quiz-app"
+              target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            </div>
+          </div>
+          <div class="projects">
+            <h3>Sticky Notes</h3>
+            <p>
+              Crafted a responsive Sticky Notes website using HTML, CSS, and
+              JavaScript, delivering an intuitive browsing experience across
+              devices. Designed with a user-friendly interface.
+              
+            </p>
+            <br />
+            <div class="code-site">
+              <a
+              class="code"
+              href="https://github.com/Ranil100/BookStore"
+              target="_blank"
+              ><i class="fa-solid fa-code"></i
+            ></a>
+            <a
+              class="link-icon"
+              href="https://vercel.com/ranils-projects/book-store"
+              target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            </div>
+          </div>
+    </section>
+    <!-- Skills -->
+    <section>
+      <div id="Skills">
+        <h1 id="skills-heading">SKILLS</h1>
+        <div class="skillset">
+          <img src="HTML_PNG.png" alt="" class="skills" />
+          <img src="CSS_PNG.png" alt="" class="skills" />
+          <img src="JS_PNG.png" alt="" class="skills" />
+          <img src="CPP_PNG.png" alt="" class="skills" />
+          <img src="SQL_PNG.png" alt="" class="skills" />
+        </div>
+      </div>
+    </section>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
