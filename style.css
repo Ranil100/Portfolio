@@ -7,11 +7,13 @@ html{
     scroll-behavior:smooth;
 }
 body{
-        background-color:white; 
-        /* #003C43; */
-        color:#000;
-        font-family: "Poppins", sans-serif;
-        font-style: normal; 
+  background-image: url("ChatGPT\ Image\ Nov\ 3\,\ 2025\,\ 12_06_32\ PM.png"); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* gives nice parallax effect */
+  color: #fff; /* make text readable */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 #navbar{
     display: flex;
@@ -123,22 +125,43 @@ body{
 .image-for-mob{
     display: none;
 }
-.socialmedia{
-    margin-top:50px;
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    gap:50px;
+.socialmedia {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 50px;
 }
-.socialmedia a{
-    text-decoration: none;
-    color:purple;
+
+/* Common style for all links */
+.socialmedia a {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
-.socialmedia a:hover{
-    color:greenyellow;
-    /* font-size: 52px; */
-     /* transition: .2s; */
+
+/* Hover effect for Font Awesome icons */
+.socialmedia a:hover i {
+  color: greenyellow;
+  transform: scale(1.1);
 }
+
+/* LeetCode logo styling */
+.leetcode-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(80%) saturate(400%) hue-rotate(250deg);
+}
+
+/* Hover effect for LeetCode logo */
+.leetcode-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(67%) saturate(510%) hue-rotate(60deg);
+}
+
 /* Projects */
 #project-container{
     display: flex;
@@ -225,3 +248,9 @@ body{
     height: 100px;
     width:100px;
 }
+ 
+  
+  
+
+  
+
